@@ -1,9 +1,0 @@
-name: push-workflow ## 워크플로우 이름
-on: push ## 푸시 이벤트에 의해서 이벤트를 트리거하겠다.
-
-jobs: 
-  push-job:
-    runs-on: ubuntu-latest
-    steps:
-    - name: step1 ## 네임 작성해도되고 생략해도 됨.
-      run: echo hello world
