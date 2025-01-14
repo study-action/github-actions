@@ -1,0 +1,9 @@
+name: context
+on: workflow_dispatch
+
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+    - name: github context
+      run: echo '${{ toJSON(github) }}' ## toJSON: Object 객체를 JSON으로 변환함
